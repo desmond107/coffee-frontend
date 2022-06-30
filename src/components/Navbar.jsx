@@ -3,9 +3,9 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div>
-        <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container">
-    <a class="navbar-brand fw-bold fs-4" href="#">Coffee-Jive</a>
+        <nav className="navbar navbar-expand-lg bg-light">
+  <div className="container">
+    <a className="navbar-brand fw-bold fs-4" href="#">Coffee-Jive</a>
 
     <button class="navbar-toggler" 
     type="button" data-bs-toggle="collapse" 
