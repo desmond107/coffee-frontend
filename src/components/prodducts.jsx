@@ -10,7 +10,7 @@ const Prodducts = () => {
     useEffect(()=>{
         const getProducts = async () => {
             setLoading(true);
-            const response = await fetch("link here");
+            const response = await fetch("https://fakestoreapi.com/products");
 
             if (componentMounted){
                 setData(await response.clone().json());
@@ -29,7 +29,7 @@ const Prodducts = () => {
        const Loading = () => {
 
         return( <>
-        Loading....
+        Loading......
         </>
         )
        }
@@ -49,16 +49,7 @@ const Prodducts = () => {
         {filter.map((Prodducts)=>{
             return(
                 <>
-                <div className='col-md-3' >
-                <div class="card h-100 text-center p-4 " key={product.id}>
-  <img src={Prodducts.image} class="card-img-top" alt={Prodducts.title}/>
-  <div class="card-body">
-    <h5 class="card-title">{Prodducts.title}</h5>
-    <p class="card-text">${Prodducts.price}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-                </div>
+                
                 </>
             )
         })}
