@@ -19,9 +19,7 @@ const Prodducts = () => {
                 console.log(filter)
 
             }
-            return() => {
-                componentMounted = false;
-            }
+            
         }
           getProducts();
        },[]);
